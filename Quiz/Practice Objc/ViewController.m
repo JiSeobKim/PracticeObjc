@@ -23,6 +23,7 @@
     [super viewDidLoad];
     self.questions = @[@"From what is cognac mad?",@"What is 7+7?",@"What is the capital of Vermont"];
     self.answer = @[@"Grapes",@"14",@"Montpelier"];
+    
 
 }
 

@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "BNRItem.h"
+#import "BNRContainer.h"
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSMutableArray *items = [[NSMutableArray alloc] init];
@@ -45,14 +47,14 @@ int main(int argc, const char * argv[]) {
 //        NSLog(@"%@", item);
 //        NSLog(@"%@", item2);
 //
-//        NSMutableArray *nameList = [[NSMutableArray alloc] init];
+        NSMutableArray *nameList = [[NSMutableArray alloc] init];
 
         for (int i = 0; i < 10; i++) {
             BNRItem *item = [BNRItem randomItem];
 
 //            [items addObject:item];
             items[i] = item;
-//            [nameList addObject:[item printSomthing]];
+            [nameList addObject:[item printSomthing]];
             
         }
         
@@ -65,6 +67,13 @@ int main(int argc, const char * argv[]) {
         
         items = nil;
         
+        
+        BNRContainer *container = [[BNRContainer alloc] initList:nameList name:@"Test"];
+        BNRContainer *con2 = [[BNRContainer alloc] initWithItemName: @"너너어어어어"];
+        NSLog(@"출력해!");
+        NSLog(@"%@", container);
+        NSLog(@"출력해!222");
+        NSLog(@"%@", [con2 superclass.]);
         
         
     }

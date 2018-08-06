@@ -9,5 +9,14 @@
 #import "BNRItem.h"
 
 @interface BNRContainer : BNRItem
+{
+    NSString *_containerName;
+    NSMutableArray *_subitems;
+}
+
+- (instancetype) initList: (NSMutableArray *) list
+                     name: (NSString *)str;
+
+
 
 @end

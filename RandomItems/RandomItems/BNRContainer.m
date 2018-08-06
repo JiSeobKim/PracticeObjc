@@ -9,9 +9,37 @@
 #import "BNRContainer.h"
 
 @implementation BNRContainer
+
+
+
+- (instancetype) initWithItemName:(NSString *)name
 {
-    NSString *_containerName;
-    NSMutableArray *_subitems;
+    self = [super initWithItemName:name];
+    
+    _valueInDollars = 150;
+    
+    return self;
 }
+
+
+
+- (instancetype) initList:(NSMutableArray *)list name:(NSString *)str
+{
+    self = [super init];
+    
+    if (self) {
+        _containerName = str;
+        _subitems = list;
+    }
+
+    return self;
+}
+
+
+- (NSString *) description
+{
+    return [NSString stringWithFormat:@"\n containerNm: %@\n subitems: %@\n itemNm:%@ \n Dollars: %d", _containerName, _subitems, _itemName, _valueInDollars];
+}
+
 
 @end

@@ -71,40 +71,17 @@
 - (instancetype) init {
     return [self initWithItemName:@"item"];
 }
-// getter, setter
-- (void)setItemName:(NSString *)str
+
+// setter
+- (void) setItemName: (NSString *) str
 {
-    _itemName = str;
+    _itemName = [str copy];
 }
 
-- (NSString *)itemName
+- (void) setContainedItem:(BNRItem *)containedItem
 {
-    return _itemName;
-}
-
-- (void)setSerialNumber:(NSString *)str
-{
-    _serialNumber = str;
-}
-
-- (NSString *)serialNumber
-{
-    return _serialNumber;
-}
-
-- (void) setValueInDollars:(int)v
-{
-    _valueInDollars = v;
-}
-
-- (int)valueInDollars
-{
-    return _valueInDollars;
-}
-
-- (NSDate *)dateCreated
-{
-    return _dateCreated;
+    _container = self;
+    _containedItem = containedItem;
 }
 
 // Override
@@ -116,5 +93,10 @@
                                    self.valueInDollars,
                                    self.dateCreated];
     return descriptionString;
+}
+
+- (void) dealloc
+{
+    NSLog(@"Destrod: %@", self);
 }
 @end

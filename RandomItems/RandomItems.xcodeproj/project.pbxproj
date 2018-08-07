@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6B190F9A2117F6230042C7C2 /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B190F992117F6230042C7C2 /* BNRItem.m */; };
-		6B190FA021184D0C0042C7C2 /* BNRContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B190F9F21184D0C0042C7C2 /* BNRContainer.m */; };
 		6B1FFFF92117EFB700C1541B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1FFFF82117EFB700C1541B /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -27,8 +26,6 @@
 /* Begin PBXFileReference section */
 		6B190F982117F6230042C7C2 /* BNRItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
 		6B190F992117F6230042C7C2 /* BNRItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
-		6B190F9E21184D0C0042C7C2 /* BNRContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRContainer.h; sourceTree = "<group>"; };
-		6B190F9F21184D0C0042C7C2 /* BNRContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRContainer.m; sourceTree = "<group>"; };
 		6B1FFFF52117EFB700C1541B /* RandomItems */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RandomItems; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B1FFFF82117EFB700C1541B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,8 +63,6 @@
 				6B1FFFF82117EFB700C1541B /* main.m */,
 				6B190F982117F6230042C7C2 /* BNRItem.h */,
 				6B190F992117F6230042C7C2 /* BNRItem.m */,
-				6B190F9E21184D0C0042C7C2 /* BNRContainer.h */,
-				6B190F9F21184D0C0042C7C2 /* BNRContainer.m */,
 			);
 			path = RandomItems;
 			sourceTree = "<group>";
@@ -130,7 +125,6 @@
 			files = (
 				6B1FFFF92117EFB700C1541B /* main.m in Sources */,
 				6B190F9A2117F6230042C7C2 /* BNRItem.m in Sources */,
-				6B190FA021184D0C0042C7C2 /* BNRContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

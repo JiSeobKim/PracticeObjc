@@ -11,6 +11,7 @@
 
 @interface ViewController ()
 
+
 @end
 
 @implementation ViewController
@@ -21,17 +22,28 @@
     
     
     
-    CGRect firstFrame = CGRectMake(160, 240, 100, 150);
+    CGRect screenRect = self.view.bounds;
+    CGRect bigRect = screenRect;
+    bigRect.size.width *= 2.0;
     
-//    BNRHypnosisView *firstView = [[BNRHypnosisView alloc] init];
-    BNRHypnosisView *firstView = [[BNRHypnosisView alloc] initWithFrame:firstFrame];
-//    firstView.frame = firstFrame;
-    firstView.backgroundColor = [UIColor redColor];
-    [self.view addSubview:firstView];
     
-    [firstView.frame.origin.y 500];
+    
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:screenRect];
+    [self.view addSubview:scrollView];
+    
+    BNRHypnosisView *hyponosisView = [[BNRHypnosisView alloc] initWithFrame:screenRect];
+    [scrollView addSubview:hyponosisView];
+    
+    screenRect.origin.x += screenRect.size.width;
+    BNRHypnosisView *hyponosisView2 = [[BNRHypnosisView alloc] initWithFrame:screenRect];
+    [scrollView addSubview:hyponosisView2];
+    
+    scrollView.contentSize = bigRect.size;
+    scrollView.pagingEnabled = YES;
     
 
+    
+    
 }
 
 

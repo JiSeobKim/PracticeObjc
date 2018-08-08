@@ -10,5 +10,10 @@
 
 @interface BNRHypnosisView : UIView
 
-@property (nonatomic) CGRect frame;
+@property (nonatomic) CGRect cframe;
+
+
+
+
+
 @end

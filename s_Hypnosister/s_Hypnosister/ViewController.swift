@@ -29,6 +29,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        fatalError("init(coder:) has not been implemented")
+    }
     
 }
 

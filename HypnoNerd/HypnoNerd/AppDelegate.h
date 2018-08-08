@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@import UserNotifications;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) UNUserNotificationCenter *userNoti;
 
 @end
 

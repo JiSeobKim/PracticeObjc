@@ -7,16 +7,34 @@
 //
 
 #import "AppDelegate.h"
+#import "BNRHypnosisViewController.h"
+#import "BNRReminderViewController.h"
+@import UserNotifications;
 
 @interface AppDelegate ()
-
 @end
 
 @implementation AppDelegate
 
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    // Notification Setting
+
+    
+    // tab ViewController Setting
+    BNRReminderViewController *rVC = [[BNRReminderViewController alloc] init];
+    
+    BNRHypnosisViewController *hVC = [[BNRHypnosisViewController alloc] init];
+    
+    UITabBarController *tabVC = [[UITabBarController alloc] init];
+    tabVC.viewControllers = @[hVC, rVC];
+    
+    
+    self.window.rootViewController = tabVC;
+    
     return YES;
 }
 

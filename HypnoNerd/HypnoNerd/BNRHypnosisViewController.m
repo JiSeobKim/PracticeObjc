@@ -8,8 +8,6 @@
 
 #import "BNRHypnosisViewController.h"
 
-
-
 @implementation BNRHypnosisViewController
 
 
@@ -18,7 +16,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    BNRHypnosisView *newView = [[BNRHypnosisView alloc] init];
+    [newView setBackgroundColor:[UIColor redColor]];
+    self.view = newView;
+    
+    
+    self.tabBarItem.title = @"Hypnotize";
+    UIImage *img = [UIImage imageNamed:@"Hypno"];
+    self.tabBarItem.image = img;
 }
+
 
 
 

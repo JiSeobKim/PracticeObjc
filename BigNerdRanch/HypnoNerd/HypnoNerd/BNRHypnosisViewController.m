@@ -17,6 +17,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    [super viewDidLoad];
+    NSLog(@"BNRHypnosisViewController loaded its view.");
+    
     BNRHypnosisView *newView = [[BNRHypnosisView alloc] init];
     [newView setBackgroundColor:[UIColor redColor]];
     self.view = newView;

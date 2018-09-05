@@ -7,6 +7,7 @@
 //
 
 #import "QuizVC.h"
+#import "SwitcherView.h"
 
 @interface QuizVC ()
 @property (weak, nonatomic) IBOutlet UILabel *lbQuizArea;
@@ -27,6 +28,11 @@
     self.lbQuizArea.text = self.questions[0];
     self.lbAnswerArea.text = @"???";
     NSLog(@"%d", self.currentQuestionindex);
+    
+    
+    SwitcherView *segView = [[SwitcherView alloc] initWithFrame:CGRectMake(20, 20, 50, 40)];
+    [segView setUserInteractionEnabled:YES];
+    [self.view addSubview:segView];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

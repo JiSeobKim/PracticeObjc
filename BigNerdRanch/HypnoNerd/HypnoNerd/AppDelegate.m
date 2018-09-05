@@ -33,7 +33,7 @@
     QuizVC *qVC = [[QuizVC alloc] initWithNibName:@"QuizView" bundle:nil];
     
     UITabBarController *tabVC = [[UITabBarController alloc] init];
-    tabVC.viewControllers = @[hVC, rVC, qVC];
+    tabVC.viewControllers = @[qVC, hVC, rVC];
     
     
     self.window.rootViewController = tabVC;

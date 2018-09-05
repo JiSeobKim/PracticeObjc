@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6B03B93D213F9C390003FE82 /* QuizView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B03B93A213F9C390003FE82 /* QuizView.xib */; };
 		6B03B93E213F9C390003FE82 /* QuizVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B03B93C213F9C390003FE82 /* QuizVC.m */; };
+		6B03B940213FCD170003FE82 /* SwitcherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B03B93F213FCD170003FE82 /* SwitcherView.xib */; };
+		6B03B943213FCD660003FE82 /* SwitcherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B03B942213FCD660003FE82 /* SwitcherView.m */; };
 		6B2BBF94211AC0A4002553BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2BBF93211AC0A4002553BD /* AppDelegate.m */; };
 		6B2BBF97211AC0A4002553BD /* BNRHypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2BBF96211AC0A4002553BD /* BNRHypnosisViewController.m */; };
 		6B2BBF9A211AC0A4002553BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2BBF98211AC0A4002553BD /* Main.storyboard */; };
@@ -24,6 +26,9 @@
 		6B03B93A213F9C390003FE82 /* QuizView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuizView.xib; sourceTree = "<group>"; };
 		6B03B93B213F9C390003FE82 /* QuizVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizVC.h; sourceTree = "<group>"; };
 		6B03B93C213F9C390003FE82 /* QuizVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizVC.m; sourceTree = "<group>"; };
+		6B03B93F213FCD170003FE82 /* SwitcherView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitcherView.xib; sourceTree = "<group>"; };
+		6B03B941213FCD660003FE82 /* SwitcherView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitcherView.h; sourceTree = "<group>"; };
+		6B03B942213FCD660003FE82 /* SwitcherView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitcherView.m; sourceTree = "<group>"; };
 		6B2BBF8F211AC0A4002553BD /* HypnoNerd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypnoNerd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B2BBF92211AC0A4002553BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6B2BBF93211AC0A4002553BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -76,6 +81,9 @@
 				6B2BBFAC211AD3B2002553BD /* BNRReminderViewController.m */,
 				6B2BBF92211AC0A4002553BD /* AppDelegate.h */,
 				6B2BBF93211AC0A4002553BD /* AppDelegate.m */,
+				6B03B93F213FCD170003FE82 /* SwitcherView.xib */,
+				6B03B941213FCD660003FE82 /* SwitcherView.h */,
+				6B03B942213FCD660003FE82 /* SwitcherView.m */,
 				6B2BBF95211AC0A4002553BD /* BNRHypnosisViewController.h */,
 				6B2BBF96211AC0A4002553BD /* BNRHypnosisViewController.m */,
 				6B2BBFA8211AC0FB002553BD /* BNRHypnosisView.h */,
@@ -150,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B2BBF9F211AC0A6002553BD /* LaunchScreen.storyboard in Resources */,
+				6B03B940213FCD170003FE82 /* SwitcherView.xib in Resources */,
 				6B2BBFAF211AD59A002553BD /* BNRReminderViewController.xib in Resources */,
 				6B2BBF9C211AC0A6002553BD /* Assets.xcassets in Resources */,
 				6B2BBF9A211AC0A4002553BD /* Main.storyboard in Resources */,
@@ -170,6 +179,7 @@
 				6B03B93E213F9C390003FE82 /* QuizVC.m in Sources */,
 				6B2BBFAD211AD3B2002553BD /* BNRReminderViewController.m in Sources */,
 				6B2BBF94211AC0A4002553BD /* AppDelegate.m in Sources */,
+				6B03B943213FCD660003FE82 /* SwitcherView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

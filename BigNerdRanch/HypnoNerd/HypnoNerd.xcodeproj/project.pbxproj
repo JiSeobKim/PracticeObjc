@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B03B93D213F9C390003FE82 /* QuizView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B03B93A213F9C390003FE82 /* QuizView.xib */; };
+		6B03B93E213F9C390003FE82 /* QuizVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B03B93C213F9C390003FE82 /* QuizVC.m */; };
 		6B2BBF94211AC0A4002553BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2BBF93211AC0A4002553BD /* AppDelegate.m */; };
 		6B2BBF97211AC0A4002553BD /* BNRHypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2BBF96211AC0A4002553BD /* BNRHypnosisViewController.m */; };
 		6B2BBF9A211AC0A4002553BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2BBF98211AC0A4002553BD /* Main.storyboard */; };
@@ -19,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B03B93A213F9C390003FE82 /* QuizView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuizView.xib; sourceTree = "<group>"; };
+		6B03B93B213F9C390003FE82 /* QuizVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizVC.h; sourceTree = "<group>"; };
+		6B03B93C213F9C390003FE82 /* QuizVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizVC.m; sourceTree = "<group>"; };
 		6B2BBF8F211AC0A4002553BD /* HypnoNerd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypnoNerd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B2BBF92211AC0A4002553BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6B2BBF93211AC0A4002553BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,6 +80,9 @@
 				6B2BBF96211AC0A4002553BD /* BNRHypnosisViewController.m */,
 				6B2BBFA8211AC0FB002553BD /* BNRHypnosisView.h */,
 				6B2BBFA9211AC0FB002553BD /* BNRHypnosisView.m */,
+				6B03B93B213F9C390003FE82 /* QuizVC.h */,
+				6B03B93C213F9C390003FE82 /* QuizVC.m */,
+				6B03B93A213F9C390003FE82 /* QuizView.xib */,
 				6B2BBF98211AC0A4002553BD /* Main.storyboard */,
 				6B2BBF9B211AC0A6002553BD /* Assets.xcassets */,
 				6B2BBF9D211AC0A6002553BD /* LaunchScreen.storyboard */,
@@ -145,6 +153,7 @@
 				6B2BBFAF211AD59A002553BD /* BNRReminderViewController.xib in Resources */,
 				6B2BBF9C211AC0A6002553BD /* Assets.xcassets in Resources */,
 				6B2BBF9A211AC0A4002553BD /* Main.storyboard in Resources */,
+				6B03B93D213F9C390003FE82 /* QuizView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +167,7 @@
 				6B2BBF97211AC0A4002553BD /* BNRHypnosisViewController.m in Sources */,
 				6B2BBFA2211AC0A6002553BD /* main.m in Sources */,
 				6B2BBFAA211AC0FB002553BD /* BNRHypnosisView.m in Sources */,
+				6B03B93E213F9C390003FE82 /* QuizVC.m in Sources */,
 				6B2BBFAD211AD3B2002553BD /* BNRReminderViewController.m in Sources */,
 				6B2BBF94211AC0A4002553BD /* AppDelegate.m in Sources */,
 			);

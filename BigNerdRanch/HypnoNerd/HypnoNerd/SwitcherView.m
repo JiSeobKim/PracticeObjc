@@ -30,6 +30,7 @@
     if (self) {
         self.lbTitle.text = @"눌러주세요 >>";
         [NSBundle.mainBundle loadNibNamed:@"SwitcherView" owner:self options:nil];
+        self.mainView.frame = frame;
         [self addSubview: self.mainView];
     }
     return self;
@@ -38,7 +39,6 @@
 
 
 - (IBAction)changeLabel:(id)sender {
-    NSLog([sender isOn] ? @"true" : @"false");
     switch ([sender selectedSegmentIndex]) {
     case 0:
             self.lbTitle.text = @"1st";

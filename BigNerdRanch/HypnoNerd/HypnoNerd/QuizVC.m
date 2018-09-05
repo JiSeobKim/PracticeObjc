@@ -7,7 +7,6 @@
 //
 
 #import "QuizVC.h"
-#import "SwitcherView.h"
 
 @interface QuizVC ()
 @property (weak, nonatomic) IBOutlet UILabel *lbQuizArea;
@@ -20,6 +19,7 @@
 
 @implementation QuizVC
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.questions = @[@"From what is cognac mad?",@"What is 7+7?",@"What is the capital of Vermont"];
@@ -30,9 +30,7 @@
     NSLog(@"%d", self.currentQuestionindex);
     
     
-    SwitcherView *segView = [[SwitcherView alloc] initWithFrame:CGRectMake(20, 20, 50, 40)];
-    [segView setUserInteractionEnabled:YES];
-    [self.view addSubview:segView];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {

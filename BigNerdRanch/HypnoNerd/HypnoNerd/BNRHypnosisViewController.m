@@ -24,8 +24,19 @@
     [newView setBackgroundColor:[UIColor redColor]];
     self.view = newView;
     
+    CGRect textFieldRect = CGRectMake(40, 70, 240, 30);
+    UITextField *textField = [[UITextField alloc] initWithFrame: textFieldRect];
+    textField.placeholder = @"안녕하신가요?";
+    textField.borderStyle = UITextBorderStyleRoundedRect;
+    textField.autocapitalizationType = UITextAutocapitalizationTypeAllCharacters;
+    textField.delegate = self;
+    [self.view addSubview:textField];
     
-    
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    NSLog(@"%@", textField.text);
+    return YES;
 }
 
 
